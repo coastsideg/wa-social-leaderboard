@@ -1,0 +1,7 @@
+node_modules/
+.vercel
+.env*
+roster.base.json
+resolve.log
+ingest.log
+ingest.out

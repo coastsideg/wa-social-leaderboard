@@ -1,0 +1,744 @@
+[
+  {
+    "name": "Roger Cook",
+    "seat": "Kwinana",
+    "facebook": {
+      "id": "133570433378147",
+      "url": "https://www.facebook.com/RogerCookMLA/",
+      "followerCount": 126000
+    },
+    "instagram": {
+      "id": "17841400903847217",
+      "handle": "rogercookmla",
+      "followerCount": 27145
+    }
+  },
+  {
+    "name": "Rita Saffioti",
+    "seat": "West Swan",
+    "facebook": {
+      "id": "360227777335790",
+      "url": "https://www.facebook.com/RitaSaffiotiMLA/",
+      "followerCount": 33000
+    },
+    "instagram": {
+      "id": "17841455690124260",
+      "handle": "rita_saffioti",
+      "followerCount": 4855
+    }
+  },
+  {
+    "name": "Lorna Clarke",
+    "seat": "Butler",
+    "facebook": {
+      "id": "298298170026098",
+      "url": "https://www.facebook.com/people/Lorna-Clarke-MLA/61558394249516/",
+      "followerCount": 3400
+    },
+    "instagram": {
+      "id": "17841466246998290",
+      "handle": "lornaclarkemla",
+      "followerCount": 632
+    }
+  },
+  {
+    "name": "Dan Bull",
+    "seat": "Maylands",
+    "facebook": {
+      "id": "1615725358700494",
+      "url": "https://www.facebook.com/DanBullMaylands/",
+      "followerCount": 3500
+    },
+    "instagram": {
+      "id": "17841401521212251",
+      "handle": "danbullmla",
+      "followerCount": 1784
+    }
+  },
+  {
+    "name": "Caitlin Collins",
+    "seat": "Hillarys",
+    "facebook": {
+      "id": "101320028320143",
+      "url": "https://www.facebook.com/CaitlinCollinsMLA/",
+      "followerCount": 12000
+    },
+    "instagram": {
+      "id": "17841405585178053",
+      "handle": "caitlincollinshillarys",
+      "followerCount": 3004
+    }
+  },
+  {
+    "name": "Meredith Hammat",
+    "seat": "Mirrabooka",
+    "facebook": {
+      "id": "104549661536614",
+      "url": "https://www.facebook.com/MeredithHammatMLA/",
+      "followerCount": 7600
+    },
+    "instagram": {
+      "id": "17841401296908498",
+      "handle": "meredithhammat",
+      "followerCount": 2556
+    }
+  },
+  {
+    "name": "Reece Whitby",
+    "seat": "Baldivis",
+    "facebook": {
+      "id": "1597366770553718",
+      "url": "https://www.facebook.com/ReeceWhitbyMLA/",
+      "followerCount": 12000
+    },
+    "instagram": {
+      "id": "17841400849098921",
+      "handle": "reecewhitby",
+      "followerCount": 2107
+    }
+  },
+  {
+    "name": "Amber-Jade Sanderson",
+    "seat": "Morley",
+    "facebook": {
+      "id": "1408846879331573",
+      "url": "https://www.facebook.com/AmberJadeSandersonMLA/",
+      "followerCount": 12000
+    },
+    "instagram": {
+      "id": "17841403090639427",
+      "handle": "amberjadesanderson",
+      "followerCount": 3200
+    }
+  },
+  {
+    "name": "Jackie Jarvis",
+    "seat": "MLC",
+    "facebook": {
+      "id": "100975585264456",
+      "url": "https://www.facebook.com/JackieJarvisMLC/",
+      "followerCount": 2100
+    },
+    "instagram": {
+      "id": "17841409412361546",
+      "handle": "jackiejarvismlc",
+      "followerCount": 678
+    }
+  },
+  {
+    "name": "John Carey",
+    "seat": "Perth",
+    "facebook": {
+      "id": "159114030835349",
+      "url": "https://www.facebook.com/johncareyperth/",
+      "followerCount": 17000
+    },
+    "instagram": {
+      "id": "17841401467633432",
+      "handle": "johncareyperth",
+      "followerCount": 8544
+    }
+  },
+  {
+    "name": "Don Punch",
+    "seat": "Bunbury",
+    "facebook": {
+      "id": "174869899604039",
+      "url": "https://www.facebook.com/donpunchmla/",
+      "followerCount": 5700
+    },
+    "instagram": null
+  },
+  {
+    "name": "Sook Yee Lai",
+    "seat": "Bibra Lake",
+    "facebook": {
+      "id": "252680211269943",
+      "url": "https://www.facebook.com/SookYeeLaiBibraLake/",
+      "followerCount": 2000
+    },
+    "instagram": {
+      "id": "17841466892361272",
+      "handle": "sookyeelaimla",
+      "followerCount": 853
+    }
+  },
+  {
+    "name": "Hugh Jones",
+    "seat": "Darling Range",
+    "facebook": {
+      "id": "112448177211679",
+      "url": "https://www.facebook.com/HughJonesDarlingRange/",
+      "followerCount": 5600
+    },
+    "instagram": {
+      "id": "17841439841336646",
+      "handle": "hughjonesmla",
+      "followerCount": 3615
+    }
+  },
+  {
+    "name": "Divina D’Anna",
+    "seat": "Kimberley",
+    "facebook": {
+      "id": "100644635115177",
+      "url": "https://www.facebook.com/DivinaDAnnaKimberley/",
+      "followerCount": 5700
+    },
+    "instagram": {
+      "id": "17841449231172252",
+      "handle": "divinadannamla",
+      "followerCount": 457
+    }
+  },
+  {
+    "name": "Kevin Michel",
+    "seat": "Pilbara",
+    "facebook": {
+      "id": "698128143679780",
+      "url": "https://www.facebook.com/KevinMichelMLA/",
+      "followerCount": 6100
+    },
+    "instagram": {
+      "id": "17841450564975945",
+      "handle": "kevinmichelpilbara",
+      "followerCount": 316
+    }
+  },
+  {
+    "name": "Simone McGurk",
+    "seat": "Fremantle",
+    "facebook": {
+      "id": "236620553143019",
+      "url": "https://www.facebook.com/SimoneMcGurkMLA/",
+      "followerCount": 13000
+    },
+    "instagram": null
+  },
+  {
+    "name": "Tony Buti",
+    "seat": "Armadale",
+    "facebook": {
+      "id": "350090051672532",
+      "url": "https://www.facebook.com/TonyButiMP/",
+      "followerCount": 8200
+    },
+    "instagram": {
+      "id": "17841409278922983",
+      "handle": "tonybuti_mla",
+      "followerCount": 1522
+    }
+  },
+  {
+    "name": "Rhys Williams",
+    "seat": "Mandurah",
+    "facebook": {
+      "id": "700116256680888",
+      "url": "https://www.facebook.com/rhyswilliams.mandurah/",
+      "followerCount": 7700
+    },
+    "instagram": {
+      "id": "17841406516681606",
+      "handle": "rhyswilliams.mandurah",
+      "followerCount": 2288
+    }
+  },
+  {
+    "name": "Magenta Marshall",
+    "seat": "Rockingham",
+    "facebook": {
+      "id": "100124836460077",
+      "url": "https://www.facebook.com/magenta4rockingham/",
+      "followerCount": 5500
+    },
+    "instagram": {
+      "id": "17841459877139114",
+      "handle": "magenta4rockingham",
+      "followerCount": 1831
+    }
+  },
+  {
+    "name": "Emily Hamilton",
+    "seat": "Joondalup",
+    "facebook": {
+      "id": "1692243401039740",
+      "url": "https://www.facebook.com/EmilyHamiltonWALaborforJoondalup/",
+      "followerCount": 6400
+    },
+    "instagram": {
+      "id": "17841413138364833",
+      "handle": "emily.hamilton.mla",
+      "followerCount": 1220
+    }
+  },
+  {
+    "name": "David Scaife",
+    "seat": "Cockburn",
+    "facebook": {
+      "id": "100497191813353",
+      "url": "https://www.facebook.com/DavidScaife4Cockburn/",
+      "followerCount": 4200
+    },
+    "instagram": {
+      "id": "17841445282706044",
+      "handle": "davidscaifecockburn",
+      "followerCount": 677
+    }
+  },
+  {
+    "name": "Michelle Maynard",
+    "seat": "Swan Hills",
+    "facebook": {
+      "id": "349600278232848",
+      "url": "https://www.facebook.com/MichelleMaynardSwanHills/",
+      "followerCount": 1700
+    },
+    "instagram": {
+      "id": "17841467498975455",
+      "handle": "michellemaynardforswanhills",
+      "followerCount": 384
+    }
+  },
+  {
+    "name": "WA Labor",
+    "seat": "Party",
+    "facebook": {
+      "id": "160089444042253",
+      "url": "https://www.facebook.com/WALabor/",
+      "followerCount": 36000
+    },
+    "instagram": {
+      "id": "17841406463407083",
+      "handle": "walabor",
+      "followerCount": 17705
+    }
+  },
+  {
+    "name": "Sabine Winton",
+    "seat": "Wanneroo",
+    "facebook": {
+      "id": "191866027863642",
+      "url": "https://www.facebook.com/sabinewintonmla/",
+      "followerCount": 8200
+    },
+    "instagram": {
+      "id": "17841407307217823",
+      "handle": "sabinewintonmla",
+      "followerCount": 1645
+    }
+  },
+  {
+    "name": "Jessica Stojkovski",
+    "seat": "Kingsley",
+    "facebook": {
+      "id": "264569863941769",
+      "url": "https://www.facebook.com/jessicastojkovski/",
+      "followerCount": 5800
+    },
+    "instagram": {
+      "id": "17841410793168092",
+      "handle": "jessicastojkovskimla",
+      "followerCount": 1504
+    }
+  },
+  {
+    "name": "Lisa Munday",
+    "seat": "Dawesville",
+    "facebook": {
+      "id": "107890457675113",
+      "url": "https://www.facebook.com/LisaMundayDawesville/",
+      "followerCount": 4700
+    },
+    "instagram": {
+      "id": "17841445009685359",
+      "handle": "lisamunday4dawesville",
+      "followerCount": 1130
+    }
+  },
+  {
+    "name": "Samantha Rowe",
+    "seat": "MLC",
+    "facebook": {
+      "id": "2037170129830911",
+      "url": "https://www.facebook.com/SamanthaRoweMLC/",
+      "followerCount": 1600
+    },
+    "instagram": {
+      "id": "17841476279446997",
+      "handle": "samantharowemlc",
+      "followerCount": 190
+    }
+  },
+  {
+    "name": "Ali Kent",
+    "seat": "Kalgoorlie",
+    "facebook": {
+      "id": "680519445457101",
+      "url": "https://www.facebook.com/AliKentMLA/",
+      "followerCount": 6800
+    },
+    "instagram": {
+      "id": "17841439533021235",
+      "handle": "alikentmla",
+      "followerCount": 1086
+    }
+  },
+  {
+    "name": "Jodie Hanns",
+    "seat": "Collie-Preston",
+    "facebook": {
+      "id": "102478381347283",
+      "url": "https://www.facebook.com/JodieHannsColliePreston/",
+      "followerCount": 4900
+    },
+    "instagram": {
+      "id": "17841445019165754",
+      "handle": "jodie.hanns",
+      "followerCount": 711
+    }
+  },
+  {
+    "name": "Cassie Rowe",
+    "seat": "Belmont",
+    "facebook": {
+      "id": "295744120519528",
+      "url": "https://www.facebook.com/cassierowemla/",
+      "followerCount": 5100
+    },
+    "instagram": {
+      "id": "17841409507780691",
+      "handle": "cassierowemla",
+      "followerCount": 1328
+    }
+  },
+  {
+    "name": "Kim Giddens",
+    "seat": "Bateman",
+    "facebook": {
+      "id": "116808503559332",
+      "url": "https://www.facebook.com/KimGiddensMLA/",
+      "followerCount": 2400
+    },
+    "instagram": {
+      "id": "17841446998762035",
+      "handle": "kimgiddensmla",
+      "followerCount": 630
+    }
+  },
+  {
+    "name": "Dave Kelly",
+    "seat": "Bassendean",
+    "facebook": {
+      "id": "298583420223004",
+      "url": "https://www.facebook.com/DaveKellyMLA/",
+      "followerCount": 5600
+    },
+    "instagram": null
+  },
+  {
+    "name": "Daniel Pastorelli",
+    "seat": "Landsdale",
+    "facebook": {
+      "id": "252675147936868",
+      "url": "https://www.facebook.com/DanielPastorelliLandsdale/",
+      "followerCount": 2000
+    },
+    "instagram": {
+      "id": "17841466388197575",
+      "handle": "danielpastorellimla",
+      "followerCount": 888
+    }
+  },
+  {
+    "name": "Lisa O'Malley",
+    "seat": "Bicton",
+    "facebook": {
+      "id": "988722514510665",
+      "url": "https://www.facebook.com/LisaOMalleyMLA/",
+      "followerCount": 3800
+    },
+    "instagram": {
+      "id": "17841440276904975",
+      "handle": "lisaomalleymla",
+      "followerCount": 1179
+    }
+  },
+  {
+    "name": "Steve Catania",
+    "seat": "Midland",
+    "facebook": {
+      "id": "505542635974661",
+      "url": "https://www.facebook.com/SteveCataniaMLA/",
+      "followerCount": 1900
+    },
+    "instagram": {
+      "id": "17841470798001726",
+      "handle": "stevecataniamidland",
+      "followerCount": 1210
+    }
+  },
+  {
+    "name": "Colleen Egan",
+    "seat": "Thornlie",
+    "facebook": {
+      "id": "477206585486611",
+      "url": "https://www.facebook.com/colleenegan4thornlie/",
+      "followerCount": 877
+    },
+    "instagram": {
+      "id": "17841471952346677",
+      "handle": "colleenegan4thornlie",
+      "followerCount": 231
+    }
+  },
+  {
+    "name": "Hannah Beazley",
+    "seat": "Victoria Park",
+    "facebook": {
+      "id": "100593108554487",
+      "url": "https://www.facebook.com/HannahForVicPark/",
+      "followerCount": 5500
+    },
+    "instagram": {
+      "id": "17841444899747567",
+      "handle": "hannahforvicpark",
+      "followerCount": 1920
+    }
+  },
+  {
+    "name": "Yaz Mubarakai",
+    "seat": "Oakford",
+    "facebook": {
+      "id": "1743303825935207",
+      "url": "https://www.facebook.com/YazMubarakaiOakford/",
+      "followerCount": 4900
+    },
+    "instagram": null
+  },
+  {
+    "name": "Stuart Aubrey",
+    "seat": "Scarborough",
+    "facebook": {
+      "id": "107392821052123",
+      "url": "https://www.facebook.com/StuartAubreyScarborough/",
+      "followerCount": 4600
+    },
+    "instagram": {
+      "id": "17841438507832419",
+      "handle": "stuartaubreyscarborough",
+      "followerCount": 2444
+    }
+  },
+  {
+    "name": "Terry Healy",
+    "seat": "Southern River",
+    "facebook": {
+      "id": "204875396555166",
+      "url": "https://www.facebook.com/TerryHealyMLA/",
+      "followerCount": 7700
+    },
+    "instagram": {
+      "id": "17841412057035758",
+      "handle": "terryhealymla",
+      "followerCount": 857
+    }
+  },
+  {
+    "name": "Stephen Price",
+    "seat": "Forrestfield",
+    "facebook": {
+      "id": "241889702538417",
+      "url": "https://www.facebook.com/stephenpricemla/",
+      "followerCount": 2300
+    },
+    "instagram": {
+      "id": "17841470285273636",
+      "handle": "stephenpricemla",
+      "followerCount": 140
+    }
+  },
+  {
+    "name": "Klasey Hirst",
+    "seat": "MLC",
+    "facebook": {
+      "id": "683712951484326",
+      "url": "https://www.facebook.com/HonKlaseyHirstMLC/",
+      "followerCount": 453
+    },
+    "instagram": {
+      "id": "17841474910404343",
+      "handle": "klaseyhirstmlc",
+      "followerCount": 259
+    }
+  },
+  {
+    "name": "Ron Sao",
+    "seat": "Cannington",
+    "facebook": {
+      "id": "296111870245390",
+      "url": "https://www.facebook.com/RonSaoMLA/",
+      "followerCount": 896
+    },
+    "instagram": {
+      "id": "17841466889534770",
+      "handle": "ronsaomla",
+      "followerCount": 299
+    }
+  },
+  {
+    "name": "David Michael",
+    "seat": "Balcatta",
+    "facebook": {
+      "id": "410251129041271",
+      "url": "https://www.facebook.com/David.Michael/",
+      "followerCount": 4700
+    },
+    "instagram": {
+      "id": "17841404810790319",
+      "handle": "david.michael.balcatta",
+      "followerCount": 1235
+    }
+  },
+  {
+    "name": "Geoff Baker",
+    "seat": "South Perth",
+    "facebook": {
+      "id": "101692151754078",
+      "url": "https://www.facebook.com/geoffsouthperth/",
+      "followerCount": 1400
+    },
+    "instagram": {
+      "id": "17841456155135827",
+      "handle": "geoffbakermla",
+      "followerCount": 498
+    }
+  },
+  {
+    "name": "Dr Parwinder Kaur",
+    "seat": "MLC",
+    "facebook": {
+      "id": "700811879775833",
+      "url": "https://www.facebook.com/people/Dr-Parwinder-Kaur-MLC/61577050202004/",
+      "followerCount": 1300
+    },
+    "instagram": {
+      "id": "17841475741820415",
+      "handle": "hondrparwinderkaurmlc",
+      "followerCount": 35
+    }
+  },
+  {
+    "name": "Stephen Pratt",
+    "seat": "Jandakot",
+    "facebook": {
+      "id": "437935649645547",
+      "url": "https://www.facebook.com/StephenPrattJandakot/",
+      "followerCount": 2800
+    },
+    "instagram": {
+      "id": "17841401692617271",
+      "handle": "stephenpratt4jandakot",
+      "followerCount": 1405
+    }
+  },
+  {
+    "name": "Mark Folkard",
+    "seat": "Burns Beach",
+    "facebook": {
+      "id": "1826420734244528",
+      "url": "https://www.facebook.com/MarkFolkardMLA/",
+      "followerCount": 2700
+    },
+    "instagram": null
+  },
+  {
+    "name": "Frank Paolino",
+    "seat": "Mount Lawley",
+    "facebook": {
+      "id": "341569939029055",
+      "url": "https://www.facebook.com/FrankPaolinoMountLawley/",
+      "followerCount": 1300
+    },
+    "instagram": {
+      "id": "17841467637620646",
+      "handle": "frankpaolinomountlawley",
+      "followerCount": 732
+    }
+  },
+  {
+    "name": "Klara Andric",
+    "seat": "MLC",
+    "facebook": {
+      "id": "102330235360100",
+      "url": "https://www.facebook.com/KlaraSouthMetro/",
+      "followerCount": 1300
+    },
+    "instagram": {
+      "id": "17841447667943086",
+      "handle": "klaraandricmlc",
+      "followerCount": 1061
+    }
+  },
+  {
+    "name": "Ayor Makur Chuot",
+    "seat": "MLC",
+    "facebook": {
+      "id": "104092144989621",
+      "url": "https://www.facebook.com/AyorMakurChuotMLC/",
+      "followerCount": 4900
+    },
+    "instagram": {
+      "id": "17841448143834796",
+      "handle": "ayormakurchuot",
+      "followerCount": 1561
+    }
+  },
+  {
+    "name": "Dr Jags",
+    "seat": "Riverton",
+    "facebook": {
+      "id": "111407443978782",
+      "url": "https://www.facebook.com/DrJagsRiverton/",
+      "followerCount": 3600
+    },
+    "instagram": {
+      "id": "17841458618241079",
+      "handle": "drjagsmla",
+      "followerCount": 451
+    }
+  },
+  {
+    "name": "Dan Caddy",
+    "seat": "MLC",
+    "facebook": {
+      "id": "100812868864281",
+      "url": "https://www.facebook.com/dancaddyMLC/",
+      "followerCount": 687
+    },
+    "instagram": null
+  },
+  {
+    "name": "Lauren Cayoun",
+    "seat": "MLC",
+    "facebook": {
+      "id": "696473660211671",
+      "url": "https://www.facebook.com/people/Lauren-Cayoun-MLC/61576907556077/",
+      "followerCount": 263
+    },
+    "instagram": null
+  },
+  {
+    "name": "Georgia Tree",
+    "seat": "Secret Harbour (Candidate)",
+    "facebook": {
+      "id": "61591788360330",
+      "url": "https://www.facebook.com/georgia4secretharbour",
+      "followerCount": 1600
+    },
+    "instagram": {
+      "id": "17841412552767047",
+      "handle": "georgia4secretharbour",
+      "followerCount": 743
+    }
+  }
+]

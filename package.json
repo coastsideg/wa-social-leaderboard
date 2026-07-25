@@ -1,0 +1,16 @@
+{
+  "name": "wa-social-leaderboard",
+  "version": "1.0.0",
+  "description": "Static leaderboard of WA Labor MPs' Facebook/Instagram performance, modelled on [tas-meta-leaderboard](https://github.com/chillihambone/tas-meta-leaderboard) but backed by the WA Labor Supermetrics/Looker spreadsheet export instead of live scraping.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
