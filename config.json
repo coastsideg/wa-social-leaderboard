@@ -1,0 +1,18 @@
+{
+  "orgName": "WA Labor",
+  "eyebrow": "Social Media Leaderboard",
+  "title": "WA Labor - Digital Performance",
+  "contactLine": "Contact WA Labor if you have any queries.",
+  "crossLink": { "label": "WA META Ad Spend Tracker ↗", "url": "https://wa-meta-spend.vercel.app" },
+  "colors": {
+    "primary": "#C41E1A",
+    "primaryDeep": "#7a0f0c",
+    "accent": "#C99A3A",
+    "accentDeep": "#8a6a24",
+    "ink": "#1C1A1E",
+    "muted": "#726b62",
+    "line": "#E3DED2",
+    "paper": "#F6F3EC",
+    "card": "#FFFFFF"
+  }
+}
