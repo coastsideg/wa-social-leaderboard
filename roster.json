@@ -209,11 +209,15 @@
     "name": "Simone McGurk",
     "seat": "Fremantle",
     "facebook": {
-      "id": "236620553143019",
+      "id": "100057753383673",
       "url": "https://www.facebook.com/SimoneMcGurkMLA/",
       "followerCount": 13000
     },
-    "instagram": null
+    "instagram": {
+      "id": "17841401410412836",
+      "handle": "simone.mcgurk",
+      "followerCount": 4448
+    }
   },
   {
     "name": "Tony Buti",
@@ -261,14 +265,14 @@
     "name": "Emily Hamilton",
     "seat": "Joondalup",
     "facebook": {
-      "id": "1692243401039740",
-      "url": "https://www.facebook.com/EmilyHamiltonWALaborforJoondalup/",
+      "id": "100058138505426",
+      "url": "https://www.facebook.com/EmilyHamiltonWALaborforJoondalup",
       "followerCount": 6400
     },
     "instagram": {
       "id": "17841413138364833",
       "handle": "emily.hamilton.mla",
-      "followerCount": 1220
+      "followerCount": 1217
     }
   },
   {
