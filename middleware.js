@@ -30,6 +30,7 @@ function loginPage(error) {
   button { width:100%; padding:10px 12px; border:none; border-radius:8px; background:#C41E1A;
     color:#fff; font-weight:700; font-size:14px; cursor:pointer; }
   .err { color:#C41E1A; font-size:12.5px; margin:-6px 0 12px; }
+  .hint { text-align:center; font-size:11.5px; color:#726b62; font-style:italic; margin:14px 0 0; }
 </style></head><body>
 <form method="POST">
   <h1>WA Labor - Digital Performance</h1>
@@ -37,6 +38,7 @@ function loginPage(error) {
   ${error ? '<p class="err">Wrong password.</p>' : ''}
   <input type="password" name="password" autofocus />
   <button type="submit">Enter</button>
+  <p class="hint">*Contact your WA Labor organiser for the password*</p>
 </form>
 </body></html>`;
 }
