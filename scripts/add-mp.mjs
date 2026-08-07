@@ -37,8 +37,12 @@ const entry = { name, seat: seat || null, facebook: null, instagram: null };
 
 console.log(`Resolving Facebook: ${fbUrl}`);
 const fb = await sc('/v1/facebook/profile', { url: fbUrl });
-entry.facebook = { id: fb.id, url: fb.url, followerCount: fb.followerCount ?? fb.likeCount ?? null };
-console.log(`  -> "${fb.name}", ${entry.facebook.followerCount} followers, canonical url ${fb.url}`);
+// Use adLibrary.pageId, NOT fb.id — the latter is a profile-style id (100057…) that the
+// Meta Graph API can't resolve. adLibrary.pageId is the real numeric Page ID, which is
+// what the Graph API path in ingest.mjs needs.
+const pageId = fb.adLibrary?.pageId || fb.id;
+entry.facebook = { id: pageId, url: fb.url, followerCount: fb.followerCount ?? fb.likeCount ?? null };
+console.log(`  -> "${fb.name}", ${entry.facebook.followerCount} followers, page id ${pageId}, canonical url ${fb.url}`);
 
 if (igUrl) {
   const handle = igHandleFromUrl(igUrl);

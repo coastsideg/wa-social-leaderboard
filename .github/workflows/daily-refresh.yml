@@ -24,6 +24,7 @@ jobs:
       - name: Run ingest
         env:
           SCRAPECREATORS_API_KEY: ${{ secrets.SCRAPECREATORS_API_KEY }}
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
         run: node scripts/ingest.mjs
 
       - name: Commit refreshed data

@@ -15,6 +15,12 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 const KEY = process.env.SCRAPECREATORS_API_KEY;
 if (!KEY) { console.error('Set SCRAPECREATORS_API_KEY (.env)'); process.exit(1); }
 
+// Optional. When set, Facebook data comes from the official Meta Graph API for any page
+// the token can reach — which matters a lot: a logged-out scrape only ever returns the
+// 3 most recent posts per page, whereas Graph returns the full window (28 posts in a
+// week for an active page). Pages the token can't reach fall back to the scrape.
+const META_TOKEN = process.env.META_ACCESS_TOKEN;
+
 const WINDOW_DAYS = 7;
 const MIN_SNAPSHOTS_FOR_FOLLOWERS = 8;
 
@@ -37,6 +43,68 @@ async function sc(path, params) {
 const now = new Date();
 const windowStartMs = now.getTime() - WINDOW_DAYS * 86400 * 1000;
 const today = now.toISOString().slice(0, 10);
+
+// --- Meta Graph API path (preferred when the token can reach the page) ---
+
+async function graph(path, params) {
+  const qs = new URLSearchParams(params);
+  const res = await fetch(`https://graph.facebook.com/v21.0/${path}?${qs}`);
+  const body = await res.json();
+  if (body.error) throw new Error(`graph ${path} -> ${body.error.message?.slice(0, 120)}`);
+  return body;
+}
+
+// The system-user token can't read /posts directly ("a Page access token is required
+// for the new Pages experience") — it has to be exchanged for a per-page token first.
+async function pageToken(pageId) {
+  const r = await graph(pageId, { fields: 'access_token', access_token: META_TOKEN });
+  if (!r.access_token) throw new Error('no page token returned');
+  return r.access_token;
+}
+
+async function fetchFacebookGraph(mp) {
+  const token = await pageToken(mp.facebook.id);
+  const profile = await graph(mp.facebook.id, { fields: 'followers_count,fan_count', access_token: token });
+
+  // Page through until we're past the window, so a busy page isn't truncated.
+  const posts = [];
+  let url = null;
+  for (let page = 0; page < 5; page++) {
+    const body = url
+      ? await (await fetch(url)).json()
+      : await graph(`${mp.facebook.id}/posts`, {
+          fields: 'created_time,attachments{media_type},shares,reactions.summary(total_count).limit(0),comments.summary(total_count).limit(0),insights.metric(post_video_views)',
+          limit: '100',
+          access_token: token,
+        });
+    if (body.error) break;
+    const batch = body.data || [];
+    posts.push(...batch);
+    const oldest = batch.length ? new Date(batch[batch.length - 1].created_time).getTime() : 0;
+    if (!body.paging?.next || oldest < windowStartMs) break;
+    url = body.paging.next;
+  }
+
+  const inWindow = posts.filter((p) => new Date(p.created_time).getTime() >= windowStartMs);
+  const isVideo = (p) => (p.attachments?.data || []).some((a) => /video/i.test(a.media_type || ''));
+  // post_video_views comes back with both a "lifetime" and a "day" series; the lifetime
+  // total is the comparable figure (the scrape path reports lifetime views too).
+  const videoViews = (p) => {
+    const m = (p.insights?.data || []).find((x) => x.name === 'post_video_views' && x.period === 'lifetime');
+    return m?.values?.[0]?.value || 0;
+  };
+
+  return {
+    followerCount: profile.followers_count ?? profile.fan_count ?? null,
+    posts: inWindow.length,
+    reels: inWindow.filter(isVideo).length,
+    comments: sum(inWindow, (p) => p.comments?.summary?.total_count),
+    reactions: sum(inWindow, (p) => p.reactions?.summary?.total_count),
+    shares: sum(inWindow, (p) => p.shares?.count),
+    views: sum(inWindow, videoViews),
+    source: 'graph',
+  };
+}
 
 async function fetchFacebook(mp) {
   const profile = await sc('/v1/facebook/profile', { url: mp.facebook.url });
@@ -107,7 +175,15 @@ const raw = [];
 for (const mp of roster) {
   process.stderr.write(`${mp.name}... `);
   let fb = null, ig = null;
-  try { fb = await fetchFacebook(mp); } catch (e) { process.stderr.write(`[FB failed: ${e.message}] `); }
+  // Prefer the Graph API (full post history); fall back to the scrape (3-post cap).
+  if (META_TOKEN) {
+    try { fb = await fetchFacebookGraph(mp); process.stderr.write('[graph] '); }
+    catch { /* not reachable by the token — fall through to the scrape */ }
+  }
+  if (!fb) {
+    try { fb = await fetchFacebook(mp); process.stderr.write('[scrape] '); }
+    catch (e) { process.stderr.write(`[FB failed: ${e.message}] `); }
+  }
   if (mp.instagram) {
     try { ig = await fetchInstagram(mp); } catch (e) { process.stderr.write(`[IG failed: ${e.message}] `); }
   }
