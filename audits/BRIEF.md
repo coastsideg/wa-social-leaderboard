@@ -119,13 +119,14 @@ Document rules:
 
 **STOP.** David compares the generated Pastorelli docs against the reference.
 
-## Phase 4: fan out
+## Phase 4: trial run, then on demand
 
-1. Ask David for the list of MPs to audit and each one's role: backbencher, frontbencher, minister, first-term MLA or established MLA. The roster doesn't hold roles.
-2. Run `pull.mjs` for each.
-3. Launch one `social-auditor` subagent per MP **in parallel**, each writing headlines only.
-4. Give David one combined table of everyone's headlines. He approves or edits them.
-5. Agents build the docs for the approved MPs.
+Audits run when David decides, not as one batch. The repo has a `/audit` command (`.claude/commands/audit.md`) that runs the whole flow for one or more named MPs.
+
+1. Ask David which one or two MPs to trial, and each one's role: backbencher, frontbencher, minister, first-term MLA or established MLA. The roster doesn't hold roles.
+2. Run them through `/audit`. With two MPs, the subagents run in parallel.
+3. **STOP.** David reviews the headlines, then the docs.
+4. Fix whatever the review turns up, in the agent file, the command or `pull.mjs`. The build is finished at this point. Every audit after this is David typing `/audit` when he wants one.
 
 ## Out of scope
 
