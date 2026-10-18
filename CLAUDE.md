@@ -3,7 +3,7 @@
 This repo does two jobs for David Cann (Director of Strategy, WA Labor):
 
 1. **The leaderboard.** It's live and runs daily on its own. Read `HANDOVER.md` before touching anything in `scripts/`, `data.json`, `roster.json` or `snapshots/`.
-2. **Social media audits.** These are new and live in `audits/`. The full build brief is `audits/BRIEF.md`, so read it before any audit work. The per-MP analysis agent is `.claude/agents/social-auditor.md`.
+2. **Social media audits.** These are new and live in `audits/`. Whenever David asks for an audit in plain words ("audit Rita Saffioti", "do Daniel's audit"), run the `/audit` flow in `.claude/commands/audit.md`, and ask him for anything missing. The full build brief is `audits/BRIEF.md`, so read it before any audit work. The per-MP analysis agent is `.claude/agents/social-auditor.md`.
 
 ## Rules that apply to everything
 
