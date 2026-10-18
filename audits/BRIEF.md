@@ -33,6 +33,24 @@ This used to take someone exporting 5 CSVs and 4 screenshots per MP from Busines
 
 **STOP.** Report Facebook coverage (X of 55), Instagram access yes or no, and any permission fixes needed.
 
+### Instagram fallback: ScrapeCreators
+
+The leaderboard gets Instagram from ScrapeCreators (`SCRAPECREATORS_API_KEY` in `.env`; see `fetchInstagram` in `scripts/ingest.mjs`). Graph stays first choice for audits, because scraping only sees public numbers. If Graph can't read an MP's Instagram, fall back to ScrapeCreators for that MP and mark the source in `audit-data.json`.
+
+What the scrape can and can't support:
+
+| Available from the scrape | Not available from the scrape |
+|---|---|
+| Follower count (today only) | Reach, or any follower vs non-follower split |
+| Post timestamps, type, caption | IG follows and unfollows (churn) |
+| Likes and comments per post | Audience by country |
+| Reel plays (`/v1/instagram/user/reels`, `play_count`) | Views on images and carousels |
+| | Reel watch time |
+
+Check how far back each endpoint actually goes. The profile timeline returns recent posts only. Paginate the reels endpoint, and confirm whether it covers a full 90 days. Don't use `/v1/instagram/post`, which is broken upstream (see `HANDOVER.md`).
+
+When the scrape is the source, the agent says so in the doc and drops or caveats the findings it can't support. It never fills them in.
+
 ## Phase 1: the data puller
 
 Write `audits/pull.mjs`: `node audits/pull.mjs "<MP name>" <start YYYY-MM-DD> <end YYYY-MM-DD>`.
@@ -112,5 +130,5 @@ Document rules:
 ## Out of scope
 
 - Any change to the live leaderboard.
-- Scraping (ScrapeCreators). Audits are Graph-only.
+- Scraping Facebook. Facebook audits are Graph-only, because the scrape caps at 3 posts per page. ScrapeCreators is only the Instagram fallback described in Phase 0.
 - Making up a substitute for any metric the API doesn't give.
