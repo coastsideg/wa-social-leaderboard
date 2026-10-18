@@ -121,12 +121,12 @@ Document rules:
 
 ## Phase 4: trial run, then on demand
 
-Audits run when David decides, not as one batch. The repo has a `/audit` command (`.claude/commands/audit.md`) that runs the whole flow for one or more named MPs.
+Audits run when David decides, not as one batch. The repo has a `/digital-audit` command (`.claude/commands/digital-audit.md`) that runs the whole flow for one or more named MPs.
 
 1. Ask David which one or two MPs to trial, and each one's role: backbencher, frontbencher, minister, first-term MLA or established MLA. The roster doesn't hold roles.
-2. Run them through `/audit`. With two MPs, the subagents run in parallel.
+2. Run them through `/digital-audit`. With two MPs, the subagents run in parallel.
 3. **STOP.** David reviews the headlines, then the docs.
-4. Fix whatever the review turns up, in the agent file, the command or `pull.mjs`. The build is finished at this point. Every audit after this is David typing `/audit` when he wants one.
+4. Fix whatever the review turns up, in the agent file, the command or `pull.mjs`. The build is finished at this point. Every audit after this is David asking for a digital audit when he wants one.
 
 ## Out of scope
 

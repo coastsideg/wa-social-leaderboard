@@ -1,9 +1,9 @@
 ---
-description: Run a social media audit for one or more named MPs (Graph API data, headlines first, then the two Word docs)
+description: Run a digital audit for one or more named MPs (Graph API data, headlines first, then the two Word docs)
 argument-hint: "Name (role)", "Name (role)" [start end]
 ---
 
-Run a social media audit for: $ARGUMENTS
+Run a digital audit for: $ARGUMENTS
 
 1. `git pull` first.
 2. For each MP, confirm the name matches `roster.json` exactly. If a role (backbencher, frontbencher, minister, first-term MLA, established MLA) isn't given, ask David. Ask about all the missing roles in one question.
