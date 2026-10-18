@@ -5,3 +5,7 @@ roster.base.json
 resolve.log
 ingest.log
 ingest.out
+
+# Social audits: MP data and finished docs stay local
+audits/data/
+audits/output/
